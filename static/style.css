@@ -1,0 +1,159 @@
+/* Global Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background:#f5f7fb;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 60px;
+
+    background:linear-gradient(135deg,#4f46e5,#9333ea);
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+
+}
+
+
+/* LOGO */
+
+.logo{
+
+    color:white;
+    font-size:22px;
+    font-weight:600;
+    letter-spacing:1px;
+
+}
+
+
+/* MENU */
+
+.nav-menu{
+
+    list-style:none;
+    display:flex;
+    gap:35px;
+
+}
+
+
+/* LINKS */
+
+.nav-link{
+
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+    font-weight:500;
+    position:relative;
+    transition:0.3s;
+
+}
+
+
+/* Underline Hover Animation */
+
+.nav-link::after{
+
+    content:'';
+    position:absolute;
+
+    width:0%;
+    height:2px;
+
+    left:0;
+    bottom:-5px;
+
+    background:white;
+
+    transition:0.3s;
+
+}
+
+
+.nav-link:hover::after{
+
+    width:100%;
+
+}
+
+
+/* HERO SECTION */
+
+.hero{
+
+    height:80vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+}
+
+
+.hero h1{
+
+    font-size:48px;
+    color:#333;
+    margin-bottom:10px;
+
+}
+
+
+.hero p{
+
+    font-size:18px;
+    color:#666;
+    margin-bottom:25px;
+
+}
+
+
+/* BUTTON */
+
+.btn{
+
+    padding:12px 28px;
+
+    border:none;
+
+    background:linear-gradient(135deg,#6366f1,#a855f7);
+
+    color:white;
+
+    font-size:16px;
+
+    border-radius:25px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+
+}
